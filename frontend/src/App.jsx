@@ -17,6 +17,7 @@ import History from './pages/History';
 import Academics from './pages/Academics';
 import AcademicCalendar from './pages/AcademicCalendar';
 import TimeTable from './pages/TimeTable';
+import Regulations from './pages/Regulations';
 import Calendar from './pages/Calendar';
 import Research from './pages/Research';
 import Facilities from './pages/Facilities';
@@ -25,6 +26,8 @@ import NewsEvents from './pages/NewsEvents';
 import BsAdmissions from './pages/BsAdmissions';
 import FacultyList from './pages/FacultyList';
 import FacultyProfile from './pages/FacultyProfile';
+import StaffList from './pages/StaffList';
+import BsStudentsList from './pages/BsStudentsList';
 import './App.css';
 
 function App() {
@@ -55,6 +58,7 @@ function App() {
           <Route path="academics" element={<Academics />} />
           <Route path="academics/calendar" element={<AcademicCalendar />} />
           <Route path="academics/timetable" element={<TimeTable />} />
+          <Route path="academics/regulations" element={<Regulations />} />
 
           {/* Research Routes */}
           <Route path="research" element={<Research />} />
@@ -64,6 +68,8 @@ function App() {
           <Route path="people" element={<FacultyList />} />
           <Route path="people/faculty" element={<FacultyList />} />
           <Route path="people/faculty/:slug" element={<FacultyProfile />} />
+          <Route path="people/staff" element={<StaffList />} />
+          <Route path="people/students/bs" element={<BsStudentsList />} />
 
           {/* Admissions Routes */}
           <Route path="admissions" element={<BsAdmissions />} />
