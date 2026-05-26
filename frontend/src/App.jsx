@@ -6,9 +6,9 @@ import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';  
 import StudentDashboard from './pages/StudentDashboard';
 import FacultyDashboard from './pages/FacultyDashboard';
-import Navbar from './components/Navigation'; // Note: Changed to Navigation.jsx based on your latest updates
+import Navbar from './components/Navigation';
 
-// --- Your Friend's New Pages ---
+// --- Page Imports ---
 import About from './pages/About';
 import Academics from './pages/Academics';
 import Achievements from './pages/Achievements';
@@ -21,14 +21,11 @@ import TimeTable from './pages/TimeTable';
 import Calendar from './pages/Calendar';
 import Contact from './pages/Contact';
 import Facilities from './pages/Facilities';
-import FacilitiesEquipment from './pages/FacilitiesEquipment';
 import FacultyList from './pages/FacultyList';
 import FacultyProfile from './pages/FacultyProfile';
-import History from './pages/History';
 import MessageFromHead from './pages/MessageFromHead';
 import NewsEvents from './pages/NewsEvents';
 import Overview from './pages/Overview';
-import Rankings from './pages/Rankings';
 import Research from './pages/Research';
 
 import './App.css';
@@ -48,7 +45,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           
-          {/* Your Friend's New Routes */}
+          {/* About Routes */}
           <Route path="/about" element={<About />} />
           <Route path="/about/overview" element={<Overview />} />
           <Route path="/about/message-from-head" element={<MessageFromHead />} />
@@ -57,38 +54,26 @@ function App() {
           <Route path="/about/history" element={<History />} />
           <Route path="/about/facilities-equipment" element={<FacilitiesEquipment />} />
           
+          {/* Academics Routes */}
           <Route path="/academics" element={<Academics />} />
           <Route path="/academics/calendar" element={<Calendar />} />
+          <Route path="/academics/academic-calendar" element={<AcademicCalendar />} />
+          <Route path="/academics/timetable" element={<TimeTable />} />
           
+          {/* Research Routes */}
           <Route path="/research" element={<Research />} />
           <Route path="/research/facilities" element={<Facilities />} />
           
+          {/* People Routes */}
           <Route path="/people/faculty/:department" element={<FacultyList />} />
           <Route path="/people/faculty/profile/:id" element={<FacultyProfile />} />
           
+          {/* Admissions */}
           <Route path="/admissions/bs" element={<BsAdmissions />} />
           
+          {/* Other Routes */}
           <Route path="/news" element={<NewsEvents />} />
           <Route path="/contact" element={<Contact />} />
-        {/* Main Application Layout Wrapper */}
-        <Route path="/" element={<Layout />}>
-
-          {/* Index Route - Home Page */}
-          <Route index element={<Home />} />
-
-          {/* About Routes */}
-          <Route path="about" element={<Overview />} />
-          <Route path="about/overview" element={<Overview />} />
-          <Route path="about/message-from-head" element={<MessageFromHead />} />
-          <Route path="about/achievements" element={<Achievements />} />
-          <Route path="about/rankings" element={<Rankings />} />
-          <Route path="about/facilities-equipment" element={<FacilitiesEquipment />} />
-          <Route path="about/history" element={<History />} />
-
-          {/* Academics Routes */}
-          <Route path="academics" element={<Academics />} />
-          <Route path="academics/calendar" element={<AcademicCalendar />} />
-          <Route path="academics/timetable" element={<TimeTable />} />
 
           {/* Catch-all for unbuilt pages */}
           <Route path="*" element={<Placeholder />} />
@@ -108,3 +93,4 @@ function App() {
 }
 
 export default App;
+

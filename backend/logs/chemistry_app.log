@@ -253,3 +253,5 @@
 2026-03-07 00:22:54,049 - WARNING - Blocked login attempt for suspended user: cy25b009@smail.iitm.ac.in
 2026-03-07 00:23:16,194 - INFO - Successful login for admin: admin@smail.iitm.ac.in
 2026-03-07 00:23:29,922 - INFO - Admin toggled User ID 2 status to Active.
+2026-05-26 13:41:10,857 - INFO - Chemistry Department Server initialized successfully.
+2026-05-26 13:41:12,130 - INFO - Chemistry Department Server initialized successfully.
