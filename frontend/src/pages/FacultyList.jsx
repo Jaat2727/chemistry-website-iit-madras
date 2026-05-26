@@ -249,9 +249,9 @@ const FacultyList = () => {
                   <button
                     key={b}
                     onClick={() => setBranch(b)}
-                    className={`px-4 py-2.5 text-xs font-bold rounded-xl transition-all duration-300 ${branch === b
-                      ? `${bc ? bc.filterActive : 'bg-[#b45309] shadow-[#b45309]/25'} text-white shadow-lg`
-                      : 'bg-white/70 backdrop-blur-xl border border-slate-200/80 text-[#4b5563] hover:border-slate-300 hover:text-[#1f2937]'
+                    className={`px-5 py-2 text-sm font-semibold rounded-full transition-all duration-300 border ${branch === b
+                      ? `${bc ? bc.filterActive : 'bg-[#b45309] border-[#b45309] shadow-[#b45309]/25'} text-white shadow-md`
+                      : 'bg-white/80 backdrop-blur-xl border-slate-200/80 text-[#4b5563] hover:border-[#b45309]/30 hover:bg-orange-50/50 hover:text-[#b45309]'
                       }`}
                   >
                     {b}
