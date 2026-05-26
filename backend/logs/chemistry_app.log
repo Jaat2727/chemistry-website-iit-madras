@@ -253,17 +253,5 @@
 2026-03-07 00:22:54,049 - WARNING - Blocked login attempt for suspended user: cy25b009@smail.iitm.ac.in
 2026-03-07 00:23:16,194 - INFO - Successful login for admin: admin@smail.iitm.ac.in
 2026-03-07 00:23:29,922 - INFO - Admin toggled User ID 2 status to Active.
-2026-03-07 00:44:21,622 - INFO - Super Admin generated with Advanced LMS Schema!
-2026-03-07 00:44:21,623 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 00:44:22,862 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 00:48:40,025 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 00:48:40,917 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 00:50:42,255 - WARNING - Failed login attempt for email: admin@smail.iitm.ac.in
-2026-03-07 00:50:49,859 - WARNING - Failed login attempt for email: admin@smail.iitm.ac.in
-2026-03-07 00:51:09,128 - INFO - Successful login for admin: admin@smail.iitm.ac.in
-2026-03-07 02:01:28,935 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 02:01:58,625 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 02:02:00,232 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 02:10:24,436 - INFO - Successful login for admin: admin@smail.iitm.ac.in
-2026-03-07 21:51:17,800 - INFO - Chemistry Department Server initialized successfully.
-2026-03-07 21:51:18,752 - INFO - Chemistry Department Server initialized successfully.
+2026-05-26 13:41:10,857 - INFO - Chemistry Department Server initialized successfully.
+2026-05-26 13:41:12,130 - INFO - Chemistry Department Server initialized successfully.
