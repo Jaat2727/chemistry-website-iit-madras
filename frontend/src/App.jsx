@@ -7,13 +7,11 @@ import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
 import StudentDashboard from './pages/StudentDashboard';
 import FacultyDashboard from './pages/FacultyDashboard';
-import Navbar from './components/Navigation';
 
 // --- Page Imports ---
 import About from './pages/About';
 import Overview from './pages/Overview';
 import MessageFromHead from './pages/MessageFromHead';
-import Achievements from './pages/Achievements';
 import Rankings from './pages/Rankings';
 import FacilitiesEquipment from './pages/FacilitiesEquipment';
 import History from './pages/History';
@@ -26,10 +24,11 @@ import Research from './pages/Research';
 import Facilities from './pages/Facilities';
 import FacultyList from './pages/FacultyList';
 import FacultyProfile from './pages/FacultyProfile';
-import MessageFromHead from './pages/MessageFromHead';
 import NewsEvents from './pages/NewsEvents';
-import Overview from './pages/Overview';
-import Research from './pages/Research';
+import BsAdmissions from './pages/BsAdmissions';
+import Contact from './pages/Contact';
+import StaffList from './pages/StaffList';
+import BsStudentsList from './pages/BsStudentsList';
 
 import './App.css';
 
@@ -39,42 +38,27 @@ function App() {
       {/* Our Secure Portal Navbar (It automatically hides on /login and /student-dashboard) */}
       <Navbar />
       <Routes>
-
         {/* ==========================================
             ZONE 1: PUBLIC WEBSITE (Uses Layout)
             ========================================== */}
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          
+
           {/* About Routes */}
-          <Route path="/about" element={<About />} />
-          <Route path="/about/overview" element={<Overview />} />
-          <Route path="/about/message-from-head" element={<MessageFromHead />} />
-          <Route path="/about/achievements" element={<Achievements />} />
-          <Route path="/about/rankings" element={<Rankings />} />
-          <Route path="/about/history" element={<History />} />
-          <Route path="/about/facilities-equipment" element={<FacilitiesEquipment />} />
-          
+          <Route path="about" element={<About />} />
+          <Route path="about/overview" element={<Overview />} />
+          <Route path="about/message-from-head" element={<MessageFromHead />} />
+          <Route path="about/achievements" element={<Placeholder />} />
+          <Route path="about/rankings" element={<Rankings />} />
+          <Route path="about/history" element={<History />} />
+          <Route path="about/facilities-equipment" element={<FacilitiesEquipment />} />
+
           {/* Academics Routes */}
-          <Route path="/academics" element={<Academics />} />
-          <Route path="/academics/calendar" element={<Calendar />} />
-          <Route path="/academics/academic-calendar" element={<AcademicCalendar />} />
-          <Route path="/academics/timetable" element={<TimeTable />} />
-          
-          {/* Research Routes */}
-          <Route path="/research" element={<Research />} />
-          <Route path="/research/facilities" element={<Facilities />} />
-          
-          {/* People Routes */}
-          <Route path="/people/faculty/:department" element={<FacultyList />} />
-          <Route path="/people/faculty/profile/:id" element={<FacultyProfile />} />
-          
-          {/* Admissions */}
-          <Route path="/admissions/bs" element={<BsAdmissions />} />
-          
-          {/* Other Routes */}
-          <Route path="/news" element={<NewsEvents />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="academics" element={<Academics />} />
+          <Route path="academics/calendar" element={<Calendar />} />
+          <Route path="academics/academic-calendar" element={<AcademicCalendar />} />
+          <Route path="academics/timetable" element={<TimeTable />} />
+          <Route path="academics/regulations" element={<Regulations />} />
 
           {/* Research Routes */}
           <Route path="research" element={<Research />} />
@@ -110,11 +94,9 @@ function App() {
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/faculty-dashboard" element={<FacultyDashboard />} />
-
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-
