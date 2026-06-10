@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import hodPhoto from '../assets/DSC_8763-min.jpg';
+import hodPhoto from '../assets/logo/IITM_LOGO.png';
 
 // --- Polished Animation Variants ---
 const fadeUpSlow = {
